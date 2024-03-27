@@ -50,7 +50,7 @@ module.exports.handleEvent = async ({ event, api, Users }) => {
     let session = (
     hours > 0001 && hours <= 400 ? "So jao, Itni Raat Ko Hy hlo kAr Rahe ho🥲" : 
     hours > 401 && hours <= 700 ? "Badi Jaldi Jaag Gye, 🙄" :
-    hours > 701 && hours <= 1000 ? "😘 Good morning 😍😍 " :
+    hours > 701 && hours <= 1000 ? " Good morning 😍😍 " :
     hours > 1001 && hours <= 1200 ? " good morning, Nashta hua" : 
     hours > 1201 && hours <= 1700 ? "Good Afternoon DoSt, Lunch Karle" : 
     hours > 1701 && hours <= 1800 ? "kese ho" : 
