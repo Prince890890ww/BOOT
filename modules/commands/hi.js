@@ -48,14 +48,14 @@ module.exports.handleEvent = async ({ event, api, Users }) => {
     let moment = require("moment-timezone");
     let hours = moment.tz('Asia/Kolkata').format('HHmm');
     let session = (
-    hours > 0001 && hours <= 400 ? "So jao baby, Itni Raat Ko Hy hlo kAr Rahe ho🥲" : 
+    hours > 0001 && hours <= 400 ? "So jao, Itni Raat Ko Hy hlo kAr Rahe ho🥲" : 
     hours > 401 && hours <= 700 ? "Badi Jaldi Jaag Gye, 🙄" :
-    hours > 701 && hours <= 1000 ? "😘 Good morning baby😍😍 " :
+    hours > 701 && hours <= 1000 ? "😘 Good morning 😍😍 " :
     hours > 1001 && hours <= 1200 ? " good morning, Nashta hua" : 
-    hours > 1201 && hours <= 1700 ? "Good Afternoon baby, Lunch Karlo😘" : 
-    hours > 1701 && hours <= 1800 ? "kese ho baby" : 
-    hours > 1801 && hours <= 2100 ? "Good evening 😘😘" : 
-    hours > 2101 && hours <= 2400 ? "how are you, dinner hua😘😘" : 
+    hours > 1201 && hours <= 1700 ? "Good Afternoon DoSt, Lunch Karle" : 
+    hours > 1701 && hours <= 1800 ? "kese ho" : 
+    hours > 1801 && hours <= 2100 ? "Good evening " : 
+    hours > 2101 && hours <= 2400 ? "how are you, dinner hua" : 
     "error");
     let name = await Users.getNameUser(event.senderID);
     let mentions = [];
